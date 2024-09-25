@@ -1,0 +1,51 @@
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/024/649/105/original/pattern-pokeball-red-and-white-ball-of-the-popular-cartoon-90s-pixel-art-free-vector.jpg");
+    background-size: 400px;
+    background-repeat: repeat;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    margin: 2rem;
+}
+
+#title {
+    max-width: 400px;
+}
+
+#imgContainer {
+    height: 500px;
+}
+
+div {
+    display: inline-block;
+}
+
+.pokedexImg {
+    background-color: tomato;
+    border-radius: 20%;
+    margin: 2rem;
+}
+
+.pokedexContent{
+    background-color: white;
+    border-radius: 5%;
+    margin: 2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbar {
+    height: 35px;
+    padding: 15px;
+    border-radius: 5%;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15pt;
+    margin: 1rem;
+}
+
+#btn {
+    max-width: 75px;
+}

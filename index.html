@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pokedex</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <body style="background-image: url('https://static.vecteezy.com/system/resources/previews/024/649/105/original/pattern-pokeball-red-and-white-ball-of-the-popular-cartoon-90s-pixel-art-free-vector.jpg');"></p>
+    <header>
+        <img id="title" src="https://logos-world.net/wp-content/uploads/2020/05/Pokemon-Logo.png"> <br>
+        <div class='search'>
+            <input id="searchbar" type="text"/>
+            <img id="btn" src="https://pngimg.com/d/pokeball_PNG2.png">
+        </div>
+    </header>
+    <main>
+        <div class="pokedexImg">
+            <img id ="imgContainer"/>
+        </div>
+        <div class="pokedexContent">
+            <h2 id ="name"></h2><br>
+            <p id="flavorText"></p><br>
+            <h2 id ="types"></h2><br>
+            <h2 id ="weight"></h2><br>
+            <h2 id ="height"></h2><br>
+        </div>
+    </main>
+</body>
+</html>
