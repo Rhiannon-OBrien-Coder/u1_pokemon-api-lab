@@ -7,8 +7,13 @@ const finalTypes = document.querySelector('#types')
 const finalWeight = document.querySelector('#weight')
 const finalHeight = document.querySelector('#height')
 const finalFT = document.querySelector('#flavorText')
+const pokedexImg = document.querySelector('.pokedexImg')
+const pokedexContent = document.querySelector('.pokedexContent')
 
 button.addEventListener('click', async () => {
+    pokedexContent.style.opacity = 1
+    pokedexImg.style.opacity = 1
+
     let pokemon = pokeInput.value.toLowerCase()
 
     let response = await axios.get(
@@ -41,10 +46,6 @@ button.addEventListener('click', async () => {
     let name = speciesResponse.data.name
     finalName.innerText = `Species: ${name}`
 
-    //below does not work if the pokemon is the first evolution, it then breaks the rest of this
-    // let evolve = speciesResponse.data.evolves_from_species.name
-    // finalEvolutions.innerText = `Evolves from: ${evolve}`
-
     let flavorTextArray = speciesResponse.data.flavor_text_entries
     let flavorText = ""
     for (i=0; i<flavorTextArray.length; i++) {
@@ -54,4 +55,12 @@ button.addEventListener('click', async () => {
     }
     finalFT.innerText = flavorText
     console.log(flavorTextArray)
+    
+    let evolve = speciesResponse.data.evolves_from_species
+    console.log(evolve)
+    if (evolve === null) {
+        finalEvolutions.innerText = `Baby!`
+    }else{
+    finalEvolutions.innerText = `Evolves from: ${evolve.name}`
+    }
 })

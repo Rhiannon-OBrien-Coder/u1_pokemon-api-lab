@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/024/649/105/original/pattern-pokeball-red-and-white-ball-of-the-popular-cartoon-90s-pixel-art-free-vector.jpg");
+    background-image: url("https://i.pinimg.com/564x/c4/da/3e/c4da3e7816de185f128b7eeb3511bb35.jpg");
     background-size: 400px;
     background-repeat: repeat;
     text-align: center;
@@ -20,15 +20,19 @@ div {
 }
 
 .pokedexImg {
-    background-color: tomato;
+    background-color: rgb(252, 76, 46, .75);
     border-radius: 20%;
+    padding: 20px;
     margin: 2rem;
+    opacity: 0;
 }
 
 .pokedexContent{
-    background-color: white;
+    background-color: rgba(174, 202, 255, 0.75);
     border-radius: 5%;
+    padding: 20px;
     margin: 2rem;
+    opacity: 0;
 }
 
 .search {
@@ -40,7 +44,6 @@ div {
 #searchbar {
     height: 35px;
     padding: 15px;
-    border-radius: 5%;
     font-family: "Fira Sans", sans-serif;
     font-size: 15pt;
     margin: 1rem;
