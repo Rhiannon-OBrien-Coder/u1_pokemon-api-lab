@@ -25,6 +25,7 @@ div {
     padding: 20px;
     margin: 2rem;
     opacity: 0;
+    image-rendering: pixelated;
 }
 
 .pokedexContent{
